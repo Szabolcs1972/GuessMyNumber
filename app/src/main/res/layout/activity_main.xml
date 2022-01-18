@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:id="@+id/felszolitas">
+    
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="20sp"
+            android:textColor="#673AB7"
+            android:id="@+id/txt1"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="128dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.418"/>
+    
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/message"
+            android:id="@+id/txt2"
+            android:textColor="#9C27B0"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/txt1"
+            app:layout_constraintEnd_toEndOf="@+id/txt1"
+            app:layout_constraintHorizontal_bias="0.44"
+            app:layout_constraintBottom_toTopOf="@+id/txt3"
+            android:layout_marginBottom="28dp"/>
+    
+    <TextView
+            android:text="@string/label2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt3"
+            app:layout_constraintStart_toStartOf="@+id/txt2"
+            app:layout_constraintEnd_toEndOf="@+id/txt2"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/input"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintHorizontal_bias="0.571"
+            android:textColor="#050505"/>
+    
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="@string/guessNumber"
+            android:ems="10"
+            android:id="@+id/input"
+            app:layout_constraintStart_toStartOf="@+id/txt3"
+            app:layout_constraintEnd_toEndOf="@+id/txt3"
+            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintHorizontal_bias="0.68"
+            android:layout_marginBottom="60dp"
+            android:importantForAutofill="no"
+            android:hint="@string/guessNumber"/>
+    
+    <Button
+            android:text="@string/enter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button"
+            app:layout_constraintStart_toStartOf="@+id/input"
+            app:layout_constraintEnd_toEndOf="@+id/input"
+            app:layout_constraintHorizontal_bias="0.56"
+            android:onClick="onBtnClick"
+            app:layout_constraintBottom_toTopOf="@+id/textView3"
+            android:layout_marginBottom="20dp"/>
+    
+    <TextView
+            android:text="@string/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            app:layout_constraintStart_toStartOf="@+id/button"
+            app:layout_constraintEnd_toEndOf="@+id/button"
+            android:textColor="#0A29D1"
+            android:textSize="24sp"
+            app:layout_constraintHorizontal_bias="0.427"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="104dp"/>
+    
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/droid"
+            android:id="@+id/imageView2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/txt1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.445"
+            android:contentDescription="@string/android_10_image"/>
+    
+    <TextView
+            android:layout_width="179dp"
+            android:layout_height="25dp"
+            android:id="@+id/textView4"
+            app:layout_constraintEnd_toEndOf="@+id/textView3"
+            app:layout_constraintStart_toStartOf="@+id/textView3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginBottom="60dp"
+            android:textColor="#FF5722"
+            android:textAllCaps="false"
+            android:textStyle="bold"/>
+    
+    <TextView
+            android:text="@string/jackpot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5"
+            android:textColor="#FF9800"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="@+id/input"
+            app:layout_constraintEnd_toEndOf="@+id/input"
+            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintTop_toBottomOf="@+id/input"
+            app:layout_constraintHorizontal_bias="0.56"
+            app:layout_constraintVertical_bias="0.678"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

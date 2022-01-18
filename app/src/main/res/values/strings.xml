@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">GuessMyNumber</string>
+	<string name="label1">My number is between 1 and 20!</string>
+	<string name="result">Remaining tips: 5</string>
+	<string name="enter">Enter</string>
+	<string name="guessNumber">10</string>
+	<string name="label2">Please, enter your number:</string>
+	<string name="message">Guess my number!</string>
+	<string name="tipp">Tipp</string>
+	<string name="android_10_image">Android 10 image</string>
+	<string name="jackpot">JackPot</string>
+</resources>
